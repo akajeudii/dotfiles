@@ -1,0 +1,11 @@
+[general]
+working_directory = "/home/jeudi"
+
+[window]
+padding = { x = 5, y = 5 }
+opacity = 0.85
+blur = true
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+blink_timeout = 0
