@@ -1,5 +1,5 @@
 import XMonad
-import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Util.EZConfig(additionalKeysP)
 import Graphics.X11.ExtraTypes.XF86
 
 main = do
@@ -7,9 +7,11 @@ main = do
     { terminal    = myTerminal
     , modMask     = myModMask
     , borderWidth = myBorderWidth
-    } `additionalKeys`
-       [ ((0, xF86XK_AudioLowerVolume  ), spawn "amixer set PCM 10%-")
-       , ((0, xF86XK_AudioRaiseVolume  ), spawn "amixer set PCM 10%+")
+    }
+  `additionalKeysP`
+       [ ("M-p"                         , spawn "rofi -show drun"           )
+       , ((0, xF86XK_AudioLowerVolume  ), spawn "amixer set PCM 10%-"       )
+       , ((0, xF86XK_AudioRaiseVolume  ), spawn "amixer set PCM 10%+"       )
        , ((0, xF86XK_AudioMute         ), spawn "amixer set IEC958,3 toggle")
        ]
 
