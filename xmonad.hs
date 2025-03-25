@@ -17,4 +17,4 @@ main = xmonad $ def
 
 myTerminal    = "alacritty"
 myModMask     = mod4Mask
-myBorderWidth = 3
+myBorderWidth = 2
