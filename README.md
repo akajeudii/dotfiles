@@ -7,3 +7,4 @@ Where do you put these files :
 alacritty.toml > $HOME/.config/alacritty/
 asound.conf > /etc/
 xmonad.hs > $HOME/.config/xmonad/
+config.i3 > $HOME/.config/i3/config
